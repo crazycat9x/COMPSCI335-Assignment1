@@ -1,14 +1,9 @@
 const fs = require("fs");
-const [fileName, k] = process.argv.slice(-2);
+const [f, k] = process.argv.slice(-2);
 
-const data = fs
-  .readFileSync(fileName, "utf8")
-  .toUpperCase()
-  .match(/[A-Z]+/g);
+const data = fs.readFileSync(f, "utf8").toUpperCase().match(/[A-Z]+/g);
 
 [...new Set(data)]
-  .map(element => [element, data.filter(word => word === element).length])
+  .map(e => [e, data.filter(w => w === e).length])
   .sort((a, b) => b[1] - a[1])
-  .forEach(
-    (element, index) => index < k && console.log(`${element[1]} ${element[0]}`)
-  );
+  .forEach((e, i) => i < k && console.log(`${e[1]} ${e[0]}`));

@@ -1,0 +1,11 @@
+/Users/tiennguyenkhac/OneDrive/Documents/University of Auckland/COMPSCI335/assignment1/C#/tngu281/bin/Debug/netcoreapp2.1/tngu281.deps.json
+/Users/tiennguyenkhac/OneDrive/Documents/University of Auckland/COMPSCI335/assignment1/C#/tngu281/bin/Debug/netcoreapp2.1/tngu281.runtimeconfig.json
+/Users/tiennguyenkhac/OneDrive/Documents/University of Auckland/COMPSCI335/assignment1/C#/tngu281/bin/Debug/netcoreapp2.1/tngu281.runtimeconfig.dev.json
+/Users/tiennguyenkhac/OneDrive/Documents/University of Auckland/COMPSCI335/assignment1/C#/tngu281/bin/Debug/netcoreapp2.1/tngu281.dll
+/Users/tiennguyenkhac/OneDrive/Documents/University of Auckland/COMPSCI335/assignment1/C#/tngu281/bin/Debug/netcoreapp2.1/tngu281.pdb
+/Users/tiennguyenkhac/OneDrive/Documents/University of Auckland/COMPSCI335/assignment1/C#/tngu281/obj/Debug/netcoreapp2.1/tngu281.csprojResolveAssemblyReference.cache
+/Users/tiennguyenkhac/OneDrive/Documents/University of Auckland/COMPSCI335/assignment1/C#/tngu281/obj/Debug/netcoreapp2.1/tngu281.csproj.CoreCompileInputs.cache
+/Users/tiennguyenkhac/OneDrive/Documents/University of Auckland/COMPSCI335/assignment1/C#/tngu281/obj/Debug/netcoreapp2.1/tngu281.AssemblyInfoInputs.cache
+/Users/tiennguyenkhac/OneDrive/Documents/University of Auckland/COMPSCI335/assignment1/C#/tngu281/obj/Debug/netcoreapp2.1/tngu281.AssemblyInfo.cs
+/Users/tiennguyenkhac/OneDrive/Documents/University of Auckland/COMPSCI335/assignment1/C#/tngu281/obj/Debug/netcoreapp2.1/tngu281.dll
+/Users/tiennguyenkhac/OneDrive/Documents/University of Auckland/COMPSCI335/assignment1/C#/tngu281/obj/Debug/netcoreapp2.1/tngu281.pdb

@@ -1,4 +1,7 @@
 ﻿using System;
+using System.IO;
+using System.Linq;
+using System.Text.RegularExpressions;
 
 namespace tngu281
 {
@@ -6,7 +9,16 @@ namespace tngu281
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            using (StreamReader sr = new StreamReader("test1.txt"))
+            {
+                Regex
+                    .Split(sr.ReadToEnd().ToUpper(), @"[^A-Z]+")
+                    .Where(word => word.Length != 0)
+                    .GroupBy(word => word)
+                    .OrderBy(word => -word.Count())
+                    .ToList()
+                    .ForEach(word => Console.WriteLine($"{word.Key} {word.Count()}"));
+            }
         }
     }
 }
