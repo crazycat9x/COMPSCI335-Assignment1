@@ -1,8 +1,8 @@
-﻿<Properties StartupConfiguration="{CD474F74-8525-4CD0-8244-88A5B1BB9CFA}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Program.cs">
+﻿<Properties StartupConfiguration="{1CC6B945-F273-41A6-B7E0-7CA081990C9B}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Program.fs">
     <Files>
-      <File FileName="Program.cs" Line="5" Column="1" />
-      <File FileName="test1.txt" Line="7" Column="4" />
+      <File FileName="Program.fs" Line="8" Column="16" />
+      <File FileName="test.txt" Line="7" Column="3" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
