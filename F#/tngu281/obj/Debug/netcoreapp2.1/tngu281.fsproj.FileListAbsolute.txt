@@ -3,6 +3,8 @@
 /Users/tiennguyenkhac/OneDrive/Documents/University of Auckland/COMPSCI335/assignment1/F#/tngu281/bin/Debug/netcoreapp2.1/tngu281.runtimeconfig.dev.json
 /Users/tiennguyenkhac/OneDrive/Documents/University of Auckland/COMPSCI335/assignment1/F#/tngu281/bin/Debug/netcoreapp2.1/tngu281.dll
 /Users/tiennguyenkhac/OneDrive/Documents/University of Auckland/COMPSCI335/assignment1/F#/tngu281/bin/Debug/netcoreapp2.1/tngu281.pdb
-/Users/tiennguyenkhac/OneDrive/Documents/University of Auckland/COMPSCI335/assignment1/F#/tngu281/obj/Debug/netcoreapp2.1/tngu281.fsprojResolveAssemblyReference.cache
 /Users/tiennguyenkhac/OneDrive/Documents/University of Auckland/COMPSCI335/assignment1/F#/tngu281/obj/Debug/netcoreapp2.1/tngu281.dll
 /Users/tiennguyenkhac/OneDrive/Documents/University of Auckland/COMPSCI335/assignment1/F#/tngu281/obj/Debug/netcoreapp2.1/tngu281.pdb
+/Users/tiennguyenkhac/OneDrive/Documents/University of Auckland/COMPSCI335/assignment1/F#/tngu281/obj/Debug/netcoreapp2.1/tngu281.fsprojAssemblyReference.cache
+/Users/tiennguyenkhac/OneDrive/Documents/University of Auckland/COMPSCI335/assignment1/F#/tngu281/obj/Debug/netcoreapp2.1/tngu281.AssemblyInfoInputs.cache
+/Users/tiennguyenkhac/OneDrive/Documents/University of Auckland/COMPSCI335/assignment1/F#/tngu281/obj/Debug/netcoreapp2.1/tngu281.AssemblyInfo.fs
