@@ -9,16 +9,24 @@ namespace tngu281
     {
         static void Main(string[] args)
         {
-            using (StreamReader sr = new StreamReader(args[0]))
+            try
             {
+                if (args.Length != 4) throw new Exception("Parameter cannot be null");
+                if (!Regex.IsMatch(args[1], @"^\+?(0|[1-9]\d*)$")) throw new Exception("k is not a valid number");
+                if (!Regex.IsMatch(args[0], @"/.txt$/")) throw new Exception($"{args[0]} is not a valid txt file");
                 Regex
-                    .Split(sr.ReadToEnd().ToUpper(), @"[^A-Z]+")
-                    .Where(word => word.Length != 0)
-                    .GroupBy(word => word)
-                    .OrderBy(word => -word.Count())
+                    .Matches(File.ReadAllText(args[0]).ToUpper(), @"[A-Z]+")
+                    .GroupBy(word => word.Value)
+                    .OrderByDescending(word => word.Count())
+                    .ThenBy(word => word.Key)
                     .Take(int.Parse(args[1]))
                     .ToList()
                     .ForEach(word => Console.WriteLine($"{word.Key} {word.Count()}"));
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine($"*** Error: {ex.Message}");
+                Environment.ExitCode = 1;
             }
         }
     }
