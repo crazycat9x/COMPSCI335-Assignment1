@@ -11,9 +11,9 @@ namespace tngu281
         {
             try
             {
-                if (args.Length != 4) throw new Exception("Parameter cannot be null");
+                if (args.Length != 2) throw new Exception("wrong number of arguments");
                 if (!Regex.IsMatch(args[1], @"^\+?(0|[1-9]\d*)$")) throw new Exception("k is not a valid number");
-                if (!Regex.IsMatch(args[0], @"/.txt$/")) throw new Exception($"{args[0]} is not a valid txt file");
+                if (!Regex.IsMatch(args[0], @".txt$")) throw new Exception($"{args[0]} is not a valid txt file");
                 Regex
                     .Matches(File.ReadAllText(args[0]).ToUpper(), @"[A-Z]+")
                     .GroupBy(word => word.Value)
