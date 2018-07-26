@@ -5,17 +5,23 @@ Object.prototype.toArray = function() {
 };
 
 async function main() {
-  const [f, k] = process.argv.slice(-2);
-  if (process.argv.length != 4) throw "wrong number of arguments";
-  if (!/^\+?(0|[1-9]\d*)$/.test(k)) throw "k is not a valid number";
-  if (!/.txt$/.test(f)) throw `${f} is not a valid txt file`;
+  let f;
+  let k = "3";
+  if (process.argv.length === 4) {
+    if (!/^\+?(0|[1-9]\d*)$/.test(k)) throw "k is not a valid number";
+    [f, k] = process.argv.slice(-2);
+  } else if (process.argv.length === 3) {
+    f = process.argv[process.argv.length - 1];
+  } else {
+    throw "wrong number of arguments";
+  }
   fs.readFileSync(f, "utf8")
     .toUpperCase()
     .match(/[A-Z]+/g)
     .reduce((c, w) => ({ ...c, [w]: ++c[w] || 1 }), {})
     .toArray()
     .sort((a, b) => b[1] - a[1] || a[0].localeCompare(b[0]))
-    .some((e, i) => (i < k ? console.log(`${e[1]} ${e[0]}`) : true));
+    .some((e, i) => (i < parseInt(k) ? console.log(`${e[1]} ${e[0]}`) : true));
 }
 
 main().catch(ex => console.log(`*** Error: ${ex.message || ex}`));
