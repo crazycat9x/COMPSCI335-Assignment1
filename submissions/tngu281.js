@@ -8,8 +8,8 @@ async function main() {
   let f;
   let k = "3";
   if (process.argv.length === 4) {
-    if (!/^\+?(0|[1-9]\d*)$/.test(k)) throw "k is not a valid number";
     [f, k] = process.argv.slice(-2);
+    if (!/^\+?([0-9]\d*)$/.test(k)) throw `${k} is not a valid number`;
   } else if (process.argv.length === 3) {
     f = process.argv[process.argv.length - 1];
   } else {

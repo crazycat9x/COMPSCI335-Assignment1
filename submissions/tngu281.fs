@@ -7,10 +7,10 @@ let main argv =
     try 
         let mutable k : int = 3
         if argv.Length = 2 then 
-            if not(Regex.IsMatch(argv.[1], @"^\+?(0|[1-9]\d*)$")) then 
-                failwith "k is not a valid number"
+            if not(Regex.IsMatch(argv.[1], @"^\+?([0-9]\d*)$")) then 
+                failwith(sprintf "%s is not a valid number" argv.[1])
             k <- int argv.[1]
-         else 
+        else 
             if argv.Length <> 1 then failwith "wrong number of arguments"
         File.ReadAllText(argv.[0]).ToUpper()
         |> (fun (x : String) -> Regex.Matches(x, @"[A-Z]+"))

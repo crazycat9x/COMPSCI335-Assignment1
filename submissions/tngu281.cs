@@ -12,8 +12,8 @@ class Program
         {
             if (args.Length == 2)
             {
+                if (!Regex.IsMatch(args[1], @"^\+?([0-9]\d*)$")) throw new Exception($"{args[1]} is not a valid number");
                 k = int.Parse(args[1]);
-                if (!Regex.IsMatch(args[1], @"^\+?(0|[1-9]\d*)$")) throw new Exception("k is not a valid number");
             }
             else if (args.Length != 1)
             {
